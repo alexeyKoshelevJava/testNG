@@ -22,9 +22,10 @@ public class NegativeCalculatorTest {
 
 
     @Test(dataProvider = "negativeData", expectedExceptions = CalculatorException.class)
-    public void negativeTest(String[] params) {
+    public void negativeTest(String param1, String param2, String param3) {
+        String[] arr = new String[]{param1, param2, param3};
         try {
-            Calculator.execute(params);
+            Calculator.execute(arr);
         } catch (CalculatorException e) {
             throw new CalculatorException();
         }
