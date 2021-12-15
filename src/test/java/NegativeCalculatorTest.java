@@ -13,13 +13,16 @@ public class NegativeCalculatorTest {
                 {"1", "8", "5"},
                 {"*", "-", "4"},
                 {"/", "8", "0"},
-                {"", "8", "5"}
+                {"", "8", "5"},
+                {"-", "-2147483648", "1"},
+                {"+", "2147483647", "1"}
+
         };
     }
 
 
     @Test(dataProvider = "negativeData", expectedExceptions = CalculatorException.class)
-    public void executeTest(String[] params) {
+    public void negativeTest(String[] params) {
         try {
             Calculator.execute(params);
         } catch (CalculatorException e) {

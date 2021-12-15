@@ -20,7 +20,7 @@ public class PositiveCalculatorTest {
     }
 
     @Test(dataProvider = "positiveData")
-    public void executeTest(String[] params) {
+    public void positiveTest(String[] params) {
 
         String actual = Calculator.execute(params);
         Assert.assertEquals(actual, params[3]);
