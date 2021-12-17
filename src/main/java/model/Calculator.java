@@ -7,8 +7,8 @@ public class Calculator {
         double result;
 
         try {
-            one = Integer.parseInt(params[1]);
-            two = Integer.parseInt(params[2]);
+            one = Double.parseDouble(params[1]);
+            two =  Double.parseDouble(params[2]);
         } catch (RuntimeException e) {
             throw new CalculatorException();
         }
