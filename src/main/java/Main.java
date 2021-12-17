@@ -1,9 +1,17 @@
 import model.Calculator;
 
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args){
-        String s = Calculator.execute(new String[]{"+","2","3"});
-        System.out.println(s);
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введи оператор и два целых числа через пробел");
+        String line = in.nextLine();
+        String[] arr = line.split(" ");
+        String str = Calculator.execute(arr);
+        System.out.println(str);
+
+
     }
 
 }
