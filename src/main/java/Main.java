@@ -5,11 +5,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("введи оператор");
+        System.out.println("For input string: введи оператор\n" +
+                "введи первое число\n" +
+                "введи второе число\n" +
+                "5.0");
         String operator = in.nextLine();
-        System.out.println("введи первое число");
         String first = in.nextLine();
-        System.out.println("введи второе число");
         String two = in.nextLine();
 
         String str = Calculator.execute(new String[]{operator, first, two});
