@@ -7,9 +7,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
         System.out.println("For input string: введи оператор\n" +
                 "введи первое число\n" +
-                "введи второе число\n" +
-                "5.0\n" +
-                "5.0\n");
+                "введи второе число\n");
         String operator = in.nextLine();
         String first = in.nextLine();
         String two = in.nextLine();
