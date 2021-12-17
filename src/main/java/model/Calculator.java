@@ -1,7 +1,7 @@
 package model;
 
 public class Calculator {
-    public static String execute(String[] params) throws CalculatorException {
+    public static String execute(String[] params)  {
         double one;
         double two;
         double result;

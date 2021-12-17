@@ -11,8 +11,8 @@ public class Main {
         String operator = in.nextLine();
         String first = in.nextLine();
         String two = in.nextLine();
-
-        String str = Calculator.execute(new String[]{operator, first, two});
+        String []arr = new String[]{operator,first,two};
+        String str = Calculator.execute(arr);
         System.out.println(str);
 
 
