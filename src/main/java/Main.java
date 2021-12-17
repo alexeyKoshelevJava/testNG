@@ -5,14 +5,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("For input string: введи оператор\n" +
-                "введи первое число\n" +
-                "введи второе число\n");
-        String operator = in.nextLine();
-        String first = in.nextLine();
-        String two = in.nextLine();
-        String []arr = new String[]{operator,first,two};
-        String str = Calculator.execute(arr);
+        args = new String[3];
+        args[0] = in.nextLine();
+        args[1] = in.nextLine();
+        args[2]= in.nextLine();
+
+        String str = Calculator.execute(args);
         System.out.println(str);
 
 
